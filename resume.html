@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leo Succar — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: letter;
+    margin: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 10px;
+    line-height: 16px;
+    color: #11181c;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    width: 8.5in;
+    height: 11in;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  a {
+    color: #11181c;
+    text-decoration: underline;
+  }
+
+  /* ---- SECTIONS ---- */
+  .section {
+    padding: 16px 36px;
+    border-bottom: 0.5px solid #dfe3e6;
+  }
+
+  .section-header {
+    padding: 32px 36px 16px;
+    border-bottom: 0.5px solid #dfe3e6;
+  }
+
+  .section-last {
+    padding: 16px 36px 32px;
+  }
+
+  /* ---- HEADER ---- */
+  .header {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .headshot {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .header-text {
+    flex: 1;
+  }
+
+  .name-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+  }
+
+  .name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #11181c;
+    line-height: 18px;
+  }
+
+  .contact {
+    font-size: 10px;
+    display: flex;
+    gap: 12px;
+  }
+
+  .tagline {
+    font-size: 10px;
+    color: #11181c;
+    line-height: 16px;
+    width: 100%;
+  }
+
+  /* ---- TWO-COLUMN ENTRY ---- */
+  .entries {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .entry {
+    display: flex;
+    gap: 8px;
+  }
+
+  .entry-left {
+    width: 148px;
+    flex-shrink: 0;
+  }
+
+  .entry-right {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .company {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1c1e21;
+    line-height: 16px;
+  }
+
+  .role {
+    font-size: 10px;
+    font-style: italic;
+    color: #1c1e21;
+    line-height: 16px;
+  }
+
+  .meta {
+    font-size: 10px;
+    color: #11181c;
+    line-height: 16px;
+  }
+
+  /* ---- BULLET LISTS ---- */
+  .entry-right ul {
+    margin: 0;
+    padding-left: 15px;
+    list-style: disc;
+  }
+
+  .entry-right ul li {
+    margin-bottom: 4px;
+    line-height: 16px;
+    padding-left: 0;
+  }
+
+  .entry-right ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-last .entry-right ul li {
+    margin-bottom: 0;
+  }
+
+  /* ---- TWO-COLUMN LAYOUT ---- */
+  .entry-right.two-col {
+    display: flex;
+    gap: 8px;
+  }
+
+  .entry-right.two-col > * {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  /* ---- SECTION LABEL (left col) ---- */
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1c1e21;
+    line-height: 16px;
+  }
+
+  /* ---- PRINT ---- */
+  @media print {
+    html, body {
+      width: 8.5in;
+      height: 11in;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="section-header">
+  <div class="header">
+    <img class="headshot" src="avatar.png" alt="Leo Succar">
+    <div class="header-text">
+      <div class="name-line">
+        <span class="name">Leo Succar</span>
+        <span class="contact">
+          <a href="https://leo.dev" target="_blank">leo.dev</a>
+          <a href="mailto:leo@leo.dev" target="_blank">leo@leo.dev</a>
+          <a href="https://twitter.com/leosuccarferre" target="_blank">@leosuccarferre</a>
+          <a href="https://www.linkedin.com/in/leosuccarferre/" target="_blank">linkedin.com/in/leosuccarferre</a>
+        </span>
+      </div>
+      <div class="tagline">Senior Designer using AI for design engineering and development, design systems, and crafting end-to-end experiences across web or native.</div>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section">
+  <div class="entries">
+
+    <div class="entry">
+      <div class="entry-left">
+        <div class="company">Design Business Company</div>
+        <div class="role">Web, Design Systems Designer</div>
+        <div class="meta">2025 – Present, Remote</div>
+        <div class="meta">Client: <span style="font-weight:600">Anthropic</span></div>
+        <div class="meta">Projects: <a href="https://claude.ai">Claude.ai</a> and <a href="https://anthropic.com">Anthropic.com</a> (ongoing)</div>
+      </div>
+      <div class="entry-right">
+        <ul>
+          <li>Tight collaboration with 2 lead designers composing, refining, and documenting nearly every page, section, component, animation, and interaction as well as exhaustive quality assurance with developers and client designers and managers.</li>
+          <li>Employing Figma's best practices, I extended and applied multi-theme system variables, styles, properties, and components across all designs to achieve precision and consistency, as well as extensive reusability and configurability, helping our small team move fast at a high bar.</li>
+          <li>Detailed rapid prototyping and design engineering with Claude Code.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-left">
+        <div class="company">Sania Saleh Studio</div>
+        <div class="role">Product, Web Designer</div>
+        <div class="meta">2025, Remote</div>
+        <div class="meta">Client: <span style="font-weight:600">Sapien</span></div>
+        <div class="meta">Project: <a href="https://earn.sapien.io">Earn.sapien.io</a></div>
+      </div>
+      <div class="entry-right">
+        <ul>
+          <li>Partnering with Sania, we designed every view, component, and flow of the core consumer-facing product as well as various visually rich and interactive website landing pages for an AI model-training platform where users conduct multi-step tasks and earn rewards and compensation.</li>
+          <li>Visual explorations and experiments with AI code assistants like Cursor and Claude Code.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-left">
+        <div class="company">Meta</div>
+        <div class="role">Senior Product Designer</div>
+        <div class="meta">2024 – '25, Remote</div>
+        <div class="meta">Team: <span style="font-weight:600">Identity and Multi-profile Experiences</span></div>
+      </div>
+      <div class="entry-right">
+        <ul>
+          <li>I used internal AI tools and traditional methods to gather, document, and share deep UX problems and opportunities.</li>
+          <li>Provided major updates to our guidance, architecture, and patterns, and delivering end-to-end flows for Facebook's cross-platform (iOS, Android, and web) push and in-app notifications from all of a user's additional profiles across diverse use cases—professional and personal—inline with precise internal systems.</li>
+          <li>Partnered on design for simplifying the management of multiple profile roles and types.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-left">
+        <div class="company">BitGo</div>
+        <div class="role">Senior Product, Design Systems Designer</div>
+        <div class="meta">2023 – '24, Remote</div>
+      </div>
+      <div class="entry-right">
+        <ul>
+          <li>With 5 designers and many more PMs/engineers, we collected user feedback and delivered data-driven interface and flows for innovative financial web apps, including onboarding, dashboards, and global trading and transactions.</li>
+          <li>Upgraded, extended, iterated, documented, and maintained a large, token/variable-heavy atomic design system, including layouts, templates, flows, patterns, and content/copy.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-left">
+        <div class="company">Plasmic</div>
+        <div class="role">Founding Designer</div>
+        <div class="meta">2020 – '24, San Francisco, CA and Remote</div>
+      </div>
+      <div class="entry-right">
+        <ul>
+          <li>Supporting a global team of up to 14 engineers, I led the design of every interface, component, and flow for a low-code visual design and development tool helping people be expressive and productive when creating for the web.</li>
+          <li>Work also included feature ideation, documentation, crafting templates, implementation, as well as company branding and communication design.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-left">
+        <div class="company">Facebook</div>
+        <div class="role">Product, Design Systems Designer</div>
+        <div class="meta">2018 – '20, Menlo Park, CA</div>
+        <div class="meta">Teams: <span style="font-weight:600">xDesign, Core Systems</span></div>
+      </div>
+      <div class="entry-right">
+        <ul>
+          <li>1 other designer and I oversaw the customer feedback and interview-driven designs of a complex suite of software engineering/developer tools and web applications supporting Instagram, WhatsApp, Facebook, Oculus, and more.</li>
+          <li>Alongside 3 other designers, we spearheaded a highly-demanded unifying React-based atomic design system for teams company-wide resulting in a visual and UX reshaping of 100s of internal tools and products, with some branding.</li>
+          <li>Collaborated closely with PMs, engineers, designers, and managers on cross-company, high-impact, often drastically unassociated systems, tools, and products—providing design services to a handful of unique teams.</li>
+          <li>I introduced and championed Figma to internal-facing design teams—creating shared resources and libraries—helping to vastly speedup their flows.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-left">
+        <div class="company">Sourcegraph</div>
+        <div class="role">Senior Product Designer</div>
+        <div class="meta">2017 – '18, San Francisco, CA</div>
+      </div>
+      <div class="entry-right">
+        <ul>
+          <li>Mostly a solo designer to a company of all engineers, I led design strategy, user interviews, explorations, custom icons, flows, and prototypes for a web app and Chrome/VS Code extensions that allowed large developer teams to search and manage their company codebases—along with branding, sales, and growth-led projects.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-left">
+        <div class="company">Zenefits</div>
+        <div class="role">Product Designer</div>
+        <div class="meta">2016, San Francisco, CA</div>
+      </div>
+      <div class="entry-right">
+        <ul>
+          <li>Together with PMs and engineers, I completed entire designs for 1 internal and 3 customer-facing core web app products, including new, comprehensive consumer-facing employee payroll and PTO SaaS web apps while contributing to extensive candidate hiring, team growth, and training.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- EDUCATION -->
+<div class="section">
+  <div class="entry">
+    <div class="entry-left">
+      <div class="company">Emerson College</div>
+      <div class="meta">Boston, MA</div>
+    </div>
+    <div class="entry-right two-col">
+      <div>
+        <ul>
+          <li>Bachelor of Arts, New Media</li>
+        </ul>
+        <ul>
+          <li>Bachelor of Science, Integrated Marketing</li>
+        </ul>
+      </div>
+      <ul>
+        <li>Concentration, Political Science</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS & TOOLS -->
+<div class="section-last">
+  <div class="entry">
+    <div class="entry-left">
+      <div class="section-label">Skills and Tools</div>
+    </div>
+    <div class="entry-right two-col">
+      <ul>
+        <li>Product, Software, Visual, UI Design</li>
+        <li>Claude Code-based Design Engineering and Prototyping</li>
+        <li>Design Systems</li>
+        <li>Web Design and Development</li>
+      </ul>
+      <ul>
+        <li>Communication, Graphic Design</li>
+        <li>Figma, Framer, Webflow, Photoshop</li>
+        <li>HTML, CSS, Tailwind, ShadCN UI</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
