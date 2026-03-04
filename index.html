@@ -166,13 +166,9 @@
 
   /* ---- TWO-COLUMN LAYOUT ---- */
   .entry-right.two-col {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
-  }
-
-  .entry-right.two-col > * {
-    flex: 1 1 0;
-    min-width: 0;
   }
 
   /* ---- SECTION LABEL (left col) ---- */
