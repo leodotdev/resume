@@ -105,7 +105,7 @@
   .entries {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
   }
 
   .entry {
@@ -116,11 +116,20 @@
   .entry-left {
     width: 148px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .entry-right {
     flex: 1;
     min-width: 0;
+    border-bottom: 0.5px solid #dfe3e6;
+    padding-bottom: 8px;
+  }
+
+  .entries .entry:last-child .entry-right {
+    border-bottom: none;
   }
 
   .company {
@@ -215,11 +224,12 @@
 
     <div class="entry">
       <div class="entry-left">
-        <div class="company">Design Business Company</div>
-        <div class="role">Web, Design Systems Designer</div>
+        <div>
+          <div class="company">Design Business Company</div>
+          <div class="role">Web, Design Systems Designer</div>
+        </div>
         <div class="meta">2025–Present, Remote</div>
-        <div class="meta">Client: <span style="font-weight:600">Anthropic</span></div>
-        <div class="meta">Projects: <a href="https://claude.ai">Claude.ai</a> and <a href="https://anthropic.com">Anthropic.com</a> (ongoing)</div>
+        <div class="meta">Client: <span style="font-weight:600">Anthropic</span><br>Projects: <a href="https://claude.ai">Claude.ai</a> and <a href="https://anthropic.com">Anthropic.com</a> (ongoing)</div>
       </div>
       <div class="entry-right">
         <ul>
@@ -232,11 +242,12 @@
 
     <div class="entry">
       <div class="entry-left">
-        <div class="company">Sania Saleh Studio</div>
-        <div class="role">Product, Web Designer</div>
+        <div>
+          <div class="company">Sania Saleh Studio</div>
+          <div class="role">Product, Web Designer</div>
+        </div>
         <div class="meta">2025, Remote</div>
-        <div class="meta">Client: <span style="font-weight:600">Sapien</span></div>
-        <div class="meta">Project: <a href="https://earn.sapien.io">Earn.sapien.io</a></div>
+        <div class="meta">Client: <span style="font-weight:600">Sapien</span><br>Project: <a href="https://earn.sapien.io">Earn.sapien.io</a></div>
       </div>
       <div class="entry-right">
         <ul>
@@ -248,8 +259,10 @@
 
     <div class="entry">
       <div class="entry-left">
-        <div class="company">Meta</div>
-        <div class="role">Senior Product Designer</div>
+        <div>
+          <div class="company">Meta</div>
+          <div class="role">Senior Product Designer</div>
+        </div>
         <div class="meta">2024–'25, Remote</div>
         <div class="meta">Team: <span style="font-weight:600">Identity and Multi-profile Experiences</span></div>
       </div>
@@ -264,8 +277,10 @@
 
     <div class="entry">
       <div class="entry-left">
-        <div class="company">BitGo</div>
-        <div class="role">Senior Product, Design Systems Designer</div>
+        <div>
+          <div class="company">BitGo</div>
+          <div class="role">Senior Product, Design Systems Designer</div>
+        </div>
         <div class="meta">2023–'24, Remote</div>
       </div>
       <div class="entry-right">
@@ -278,8 +293,10 @@
 
     <div class="entry">
       <div class="entry-left">
-        <div class="company">Plasmic</div>
-        <div class="role">Founding Designer</div>
+        <div>
+          <div class="company">Plasmic</div>
+          <div class="role">Founding Designer</div>
+        </div>
         <div class="meta">2020–'24, San Francisco, CA and Remote</div>
       </div>
       <div class="entry-right">
@@ -292,8 +309,10 @@
 
     <div class="entry">
       <div class="entry-left">
-        <div class="company">Facebook</div>
-        <div class="role">Product, Design Systems Designer</div>
+        <div>
+          <div class="company">Facebook</div>
+          <div class="role">Product, Design Systems Designer</div>
+        </div>
         <div class="meta">2018–'20, Menlo Park, CA</div>
         <div class="meta">Teams: <span style="font-weight:600">xDesign, Core Systems</span></div>
       </div>
@@ -309,8 +328,10 @@
 
     <div class="entry">
       <div class="entry-left">
-        <div class="company">Sourcegraph</div>
-        <div class="role">Senior Product Designer</div>
+        <div>
+          <div class="company">Sourcegraph</div>
+          <div class="role">Senior Product Designer</div>
+        </div>
         <div class="meta">2017–'18, San Francisco, CA</div>
       </div>
       <div class="entry-right">
@@ -322,8 +343,10 @@
 
     <div class="entry">
       <div class="entry-left">
-        <div class="company">Zenefits</div>
-        <div class="role">Product Designer</div>
+        <div>
+          <div class="company">Zenefits</div>
+          <div class="role">Product Designer</div>
+        </div>
         <div class="meta">2016, San Francisco, CA</div>
       </div>
       <div class="entry-right">
